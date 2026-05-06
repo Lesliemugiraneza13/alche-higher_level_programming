@@ -1,4 +1,4 @@
-i#!/usr/bin/python3
+#!/usr/bin/python3
 """Module that checks if object is instance of or inherits from a class"""
 
 
