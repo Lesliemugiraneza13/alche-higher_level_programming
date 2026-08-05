@@ -1,11 +1,17 @@
 #!/usr/bin/node
-const arg = process.argv[2];
-const times = parseInt(arg, 10);
 
-if (isNaN(times)) {
+const count = parseInt(process.argv[2], 10);
+
+if (Number.isNaN(count)) {
   console.log('Missing number of occurrences');
-} else {
-  for (let i = 0; i < times; i++) {
-    console.log('C is fun');
-  }
+}
+
+const lines = [];
+
+for (let i = 0; i < count; i++) {
+  lines.push('C is fun');
+}
+
+if (lines.length > 0) {
+  console.log(lines.join('\n'));
 }
